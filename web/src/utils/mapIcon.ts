@@ -1,10 +1,12 @@
-import Leaflet from 'leaflet';
+import L from 'leaflet';
+import mapMarkerImg from '../assets/images/map-marker.svg';
 
-import mapMarkerImg from '../assets/map-marker.svg';
-
-export const mapIcon = Leaflet.icon({
+const mapIcon = L.icon({
   iconUrl: mapMarkerImg,
+
   iconSize: [58, 68],
   iconAnchor: [29, 68],
-  popupAnchor: [170, 2],
+  popupAnchor: [0, -60],
 });
+
+export default mapIcon;

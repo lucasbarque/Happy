@@ -1,13 +1,14 @@
-import { BrowserRouter } from 'react-router-dom';
-import { Router } from './Router';
+import React from 'react';
+import Routes from './routes';
 
-import './styles/global.css';
 import 'leaflet/dist/leaflet.css';
+import './styles/global.css';
 
-export function App() {
+export default function App() {
   return (
-    <BrowserRouter>
-      <Router />
-    </BrowserRouter>
+    <div className="App">
+      <Routes />
+    </div>
   );
 }
+

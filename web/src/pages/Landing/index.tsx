@@ -1,11 +1,12 @@
-import { FiArrowRight } from 'react-icons/fi';
+import React from 'react';
+import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
+import logoImg from '../../assets/images/logo.svg';
 
 import './styles.css';
 
-import logoImg from '../../assets/logo.svg';
-import { Link } from 'react-router-dom';
-
-export function Landing() {
+export default function Landing() {
   return (
     <div id='page-landing'>
       <div className='content-wrapper'>
@@ -21,8 +22,8 @@ export function Landing() {
           <span>Campo Grande</span>
         </div>
 
-        <Link to='/orphanages' className='enter-app'>
-          <FiArrowRight size={26} color='rgba(0, 0, 0, 0.6)' />
+        <Link to='/app' className='enter-app'>
+          <FaArrowRight size={26} color='rgba(0, 0, 0, 0.6)' />
         </Link>
       </div>
     </div>
